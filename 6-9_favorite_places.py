@@ -7,3 +7,14 @@
 # ask some friends to name a few of their favorite places. 
 # Loop through the dictionary, and print each person’s name 
 # and their favorite places.
+
+favorite_places = {
+	'robert': ['paris', 'francfort', 'rome'],
+	'ginette': ['la motte beuvron', 'geneve'],
+	'arthur': ['montargis'],
+	}
+
+for name, places in favorite_places.items():
+	print("\n" + name.title() + "'s favorite places are ")
+	for place in places:
+		print("\t" + place.title())
