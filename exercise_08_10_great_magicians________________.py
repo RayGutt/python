@@ -5,13 +5,26 @@ def show_magicians(magicians):
 
 def make_great(magicians):
 	"""modify the list in the parameter list"""
+
+	# start with an empty list
+	great_magicians = []
+
 	for magician in magicians:
-		magicians(magician) = "The Great " + magicians(magician)
+		great_magicians.append(magician + "The Great ")
 
-wizzards = [ 'malfoy', 'harry potter', 'merlin']
+	magicians = []
 
-show_magicians(wizzards)
+	for magician in great_magicians:
+		magicians.append(magician)
 
-make_great(wizzards)
 
-show_magicians(wizzards)
+magicians = [ 'malfoy', 'harry potter', 'merlin']
+
+print("List before calling the function")
+show_magicians(magicians)
+
+
+print("\nList after calling the function")
+make_great(magicians)
+
+show_magicians(magicians)
